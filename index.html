@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="images/icon.ico">
+    <title>Dashboard</title>
+    <!--bootstrap css-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!--font awesome-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <!--main css-->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="wrapper">
+        <div class="overlay"></div>
+         
+             <!-- Sidebar -->
+         <nav class="fixed-top align-top" id="sidebar-wrapper" role="navigation">
+            <div class="simplebar-content" style="padding: 0px;">
+                    <a class="sidebar-brand" href="index.html"><span class="align-middle"><img src="images/icon.ico" alt="">  CinemaxxC</span></a>
+     
+            <ul class="navbar-nav align-self-stretch">
+          
+         <li class="has"> 
+               <a class="nav-link text-left"  role="button" 
+               aria-haspopup="true" aria-expanded="false">
+            <i class="fas fa-chart-pie"></i>  Dashboard 
+              </a>
+               </li>
+          
+            <li class="has-sub"> 
+               <a class="nav-link collapsed text-left" href="#collapseExample2" role="button" data-toggle="collapse" >
+             <i class="fas fa-ticket-alt"></i> Movies
+              </a>
+               <div class="collapse menu mega-dropdown" id="collapseExample2">
+             <div class="dropmenu" aria-labelledby="navbarDropdown">
+             <div class="container-fluid ">
+                                 <div class="row">
+                                     <div class="col-lg-12 px-2">
+                                         <div class="submenu-box"> 
+                                             <ul class="list-unstyled m-0">
+                                                 <li><a href="nowplaying.html">Now Playing</a></li>
+                                                 <li><a href="comingsoon.html">Coming Soon</a></li>
+                                             </ul>
+                                         </div>
+                                     </div>
+                                 </div>
+                             </div>
+                  </div>
+               </div>
+               </li>
+               <li class="has-sub"> 
+                <a class="nav-link collapsed text-left" href="#collapseExample3" role="button" data-toggle="collapse" >
+              <i class="fas fa-film"></i> Cinemas
+               </a>
+                <div class="collapse menu mega-dropdown" id="collapseExample3">
+              <div class="dropmenu" aria-labelledby="navbarDropdown">
+              <div class="container-fluid ">
+                                  <div class="row">
+                                      <div class="col-lg-12 px-2">
+                                          <div class="submenu-box"> 
+                                              <ul class="list-unstyled m-0">
+                                                  <li><a href="faq.html">FAQ</a></li>
+                                                  <li><a href="promotion.html">Promotion</a></li>
+                                              </ul>
+                                          </div>
+                                      </div>
+                                  </div>
+                              </div>
+                   </div>
+                </div>
+                </li>
+              
+                <li class="has-sub"> 
+                    <a class="nav-link collapsed text-left" href="#collapseExample4" role="button" data-toggle="collapse" >
+                  <i class="fas fa-user"></i> Membership
+                   </a>
+                    <div class="collapse menu mega-dropdown" id="collapseExample4">
+                  <div class="dropmenu" aria-labelledby="navbarDropdown">
+                  <div class="container-fluid ">
+                                      <div class="row">
+                                          <div class="col-lg-12 px-2">
+                                              <div class="submenu-box"> 
+                                                  <ul class="list-unstyled m-0">
+                                                      <li><a href="members.html">Members</a></li>
+                                                      <li><a href="visitor.html">Visitor</a></li>
+                                                  </ul>
+                                              </div>
+                                          </div>
+                                          
+                                      </div>
+                                  </div>
+                       </div>
+                    </div>
+                    </li>
+                 </div>
+                
+         </nav>
+             <!-- /#sidebar-wrapper -->
+     
+    
+     
+             <!-- Page Content -->
+             <div id="page-content-wrapper">
+              
+                <div id="content">
+     
+            <div class="container-fluid p-0 px-lg-0 px-md-0">
+             <!-- Topbar -->
+             <nav class="navbar navbar-expand navbar-light my-navbar">
+     
+               <!-- Sidebar Toggle (Topbar) -->
+                 <div type="button"  id="bar" class="nav-icon1 hamburger animated fadeInLeft is-closed" data-toggle="offcanvas">
+                    <span></span>
+                     <span></span>
+                      <span></span>
+                 </div>
+                 
+     
+               <!-- Topbar Search -->
+               <form class="d-none d-sm-inline-block form-inline navbar-search">
+                 <div class="input-group">
+                   <input type="text" class="form-control bg-light " placeholder="Search" aria-label="Search">
+                   <div class="input-group-append">
+                     <button class="btn btn-primary" type="button">
+                       <i class="fas fa-search fa-sm"></i>
+                     </button>
+                   </div>
+                 </div>
+               </form>
+     
+               <!-- Topbar Navbar -->
+               <ul class="navbar-nav ml-auto">
+     
+                 <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+                 <li class="nav-item dropdown  d-sm-none">
+     
+                 <!-- Nav Item - User Information -->
+                 <li class="nav-item dropdown">
+                   <a class="nav-link dropdown-toggle" href="#" id="userDropdown" role="button" data-toggle="dropdown">
+                     <span class="mr-2 d-none d-lg-inline text-gray-600 small">ADMIN</span>
+                     <img class="img-profile rounded-circle" src="images/testi2.jpg">
+                   </a>
+                 </li>
+     
+               </ul>
+     
+             </nav>
+             <!-- End of Topbar -->
+     
+             <!-- Begin Page Content -->
+             <div class="container-fluid px-lg-4">
+     <div class="row">
+     <div class="col-md-12 mt-lg-4 mt-4">
+               <!-- Page Heading -->
+               <div class="d-sm-flex align-items-center justify-content-between mb-4">
+                 <h1 class="h3 mb-0 text-gray-800">Dashboard</h1>
+               </div>
+               </div>
+     <div class="col-md-12">
+            <div class="row">
+                                         <div class="col-sm-3">
+                                             <div class="card">
+                                                 <div class="card-body1">
+                                                     <h5 class="card-title mb-4">Profit</h5>
+                                                     <h1 class="display-5 mt-1 mb-3">$9.999</h1>
+                                                     <div class="mb-1">
+                                                         <span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i> +5.65% </span>
+                                                         <span class="text-muted">Since last week</span>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                             
+                                         </div>
+                                         <div class="col-sm-3">
+                                             <div class="card">
+                                                 <div class="card-body2">
+                                                     <h5 class="card-title mb-4">Sales</h5>
+                                                     <h1 class="display-5 mt-1 mb-3">1.154</h1>
+                                                     <div class="mb-1">
+                                                         <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> -3.65% </span>
+                                                         <span class="text-muted">Since last week</span>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                             
+                                         </div>
+                                         <div class="col-sm-3">
+                                             <div class="card">
+                                                 <div class="card-body3">
+                                                     <h5 class="card-title mb-4">Sales</h5>
+                                                     <h1 class="display-5 mt-1 mb-3">2.733</h1>
+                                                     <div class="mb-1">
+                                                         <span class="text-danger"> <i class="mdi mdi-arrow-bottom-right"></i> -9.65% </span>
+                                                         <span class="text-muted">Since last month</span>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                             
+                                         </div>
+                                         <div class="col-sm-3">
+                                             <div class="card">
+                                                 <div class="card-body4">
+                                                     <h5 class="card-title mb-4">Earnings</h5>
+                                                     <h1 class="display-5 mt-1 mb-3">$21.300</h1>
+                                                     <div class="mb-1">
+                                                         <span class="text-success"> <i class="mdi mdi-arrow-bottom-right"></i> 6.65% </span>
+                                                         <span class="text-muted">Since last week</span>
+                                                     </div>
+                                                 </div>
+                                             </div>
+                                             
+                                         </div>
+                                         
+                                         
+                                     </div>
+     </div>
+                    <!--chart-->
+                        <div class="row">
+                            <div class="col-6 chart">
+                                <canvas id="myChart2" width="500" height="400"></canvas>
+                            </div>
+                            <div class="col-5 chart">
+                                <canvas id="myChart" width="500" height="400"></canvas>
+                            </div>  
+                            
+          
+                         <!-- column -->
+                         <div class="col-md-12 mt-4 ml-3">
+                             <div class="card">
+                                 <div class="card-body">
+                                     <!-- title -->
+                                     <div class="d-md-flex align-items-center">
+                                         <div>
+                                             <h4 class="card-title">Top Grossing Movies</h4>
+                                             <h5 class="card-subtitle">Overview</h5>
+                                         </div>
+                                         <div class="ml-auto">
+                                             <div class="dl">
+                                                 <select class="custom-select">
+                                                     <option value="0" >Monthly</option>
+                                                     <option value="1"selected="">Weekly</option>
+                                                     <option value="2" >Yearly</option>
+                                                 </select>
+                                             </div>
+                                         </div>
+                                     </div>
+                                     <!-- title -->
+                                 </div>
+                                 <div class="table-responsive">
+                                     <table class="table v-middle">
+                                         <thead>
+                                             <tr class="bg-light">
+                                                 <th class="border-top-0">Movies</th>
+                                                 <th class="border-top-0">Dates</th>
+                                                 <th class="border-top-0">Directors</th>
+                                                 <th class="border-top-0">Genre</th>
+                                                 <th class="border-top-0">Tickets</th>
+                                                 <th class="border-top-0">Sales</th>
+                                                 <th class="border-top-0">Earnings</th>
+                                             </tr>
+                                         </thead>
+                                         <tbody>
+                                             <tr>
+                                                 <td>
+                                                     <div class="d-flex align-items-center">
+                                                         <div class="">
+                                                             <h4 class="m-b-0 font-16">Marvel Avengers</h4>
+                                                         </div>
+                                                     </div>
+                                                 </td>
+                                                 <td>2021</td>
+                                                 <td>Russo bro</td>
+                                                 <td>
+                                                     <label class="label">Action</label>
+                                                 </td>
+                                                 <td>18902</td>
+                                                 <td>18293</td>
+                                                 <td>
+                                                     <h5 class="m-b-0">$9850.06</h5>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td>
+                                                     <div class="d-flex align-items-center">
+                                                         <div class="">
+                                                             <h4 class="m-b-0 font-16">Justice League</h4>
+                                                         </div>
+                                                     </div>
+                                                 </td>
+                                                 <td>2017</td>
+                                                 <td>Zack Snyder</td>
+                                                 <td>
+                                                     <label class="label">Action</label>
+                                                 </td>
+                                                 <td>3912</td>
+                                                 <td>38212</td>
+                                                 <td>
+                                                     <h5 class="m-b-0">$8850.06</h5>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td>
+                                                     <div class="d-flex align-items-center">
+                                                         <div class="">
+                                                             <h4 class="m-b-0 font-16">Kimetsu No Yaiba</h4>
+                                                         </div>
+                                                     </div>
+                                                 </td>
+                                                 <td>2019</td>
+                                                 <td>Koei Animation</td>
+                                                 <td>
+                                                     <label class="label label-success">Anime</label>
+                                                 </td>
+                                                 <td>8534</td>
+                                                 <td>23142</td>
+                                                 <td>
+                                                     <h5 class="m-b-0">$7850.06</h5>
+                                                 </td>
+                                             </tr>
+                                             <tr>
+                                                 <td>
+                                                     <div class="d-flex align-items-center">
+                                                         <div class="">
+                                                             <h4 class="m-b-0 font-16">Black Panther</h4>
+                                                         </div>
+                                                     </div>
+                                                 </td>
+                                                 <td>2018</td>
+                                                 <td>Ryan Cogler</td>
+                                                 <td>
+                                                     <label class="label">Superhero</label>
+                                                 </td>
+                                                 <td>1283</td>
+                                                 <td>35456</td>
+                                                 <td>
+                                                     <h5 class="m-b-0">$6850.06</h5>
+                                                 </td>
+                                             </tr>
+                                         </tbody>
+                                     </table>
+                                 </div>
+                             </div>
+                         </div>
+                        
+     
+             </div>
+     
+             </div>
+             <!-- /.container-fluid -->
+     
+           </div>
+                 
+            
+                 
+             </div>
+             </div>
+             <!-- /#page-content-wrapper -->
+     
+         </div>
+         <!-- /#wrapper -->
+    
+
+
+
+
+
+
+
+
+
+    <!--chart js-->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.5.1/dist/chart.js"></script>
+    <!--jquery js-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!--popper js-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!--bootstrap js-->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!--main js-->
+    <script src="js/script.js"></script>
+</body>
+</html>
